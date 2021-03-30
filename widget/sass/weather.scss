@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+.weatherWidget {
+  width: 350px;
+  font-size: 16px;
+  color: #455058;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 1em;
+  box-shadow: rgba(0,0,0,.2) 0 3px 6px;
+  overflow: hidden;
+  & &-header {
+    display: flex;
+    padding: 1em 1em 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9ebee;
+    h2 {
+      margin: 0.5em;
+      font-weight: 500;
+    }
+    &__refresh {
+      width: 2em;
+      height: 2em;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      background-image: url('../icons/_refresh.png');
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+  & &-body {
+    padding: 0 1em 1.5em 1em;
+    background-color: #e9ebee;
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        filter: drop-shadow(0 1px 1px rgba(0,0,0,.4));
+      }
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+    }
+    &__temperature {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    &__forecast {
+      padding: 0 1em;
+      flex-grow: 1;
+      h2, h4 {
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+    &__date {
+      background-color: #1292b9;
+      color: #fff;
+      transform: translateX(1em);
+      padding: .75em 1.25em;
+      border-radius: .5em 0 0 .5em;
+      text-align: center;
+    }
+  }
+  & &-footer {
+    padding: 2em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c373a;
+    color: #8f9292;
+    &>div {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: .5em;
+      }
+    }
+    &__wind {
+      .icon {
+        width: 1.25em;
+        height: 1.25em;
+        background: url("../icons/_arrow.svg") center no-repeat;
+        background-size: contain;
+      }
+    }
+    &__humidity {
+      .icon {
+        width: 1.25em;
+        height: 1.25em;
+        background: url("../icons/_teardrop.svg") center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

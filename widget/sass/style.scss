@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  background: #e0e5ee url("../img/bg.jpg") center no-repeat fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.center-block {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
